@@ -57,28 +57,28 @@ namespace _LTGD__DeThi2017
                     break;
                 case Keys.Up:
                     if (dy == 0)
-                        dy = 8;
+                        dy = dx;
                     if (dy > 0)
                         dy = -dy;
                     dx = 0;
                     break;
                 case Keys.Down:
                     if (dy == 0)
-                        dy = 8;
+                        dy = dx;
                     if (dy < 0)
                         dy = -dy;
                     dx = 0;
                     break;
                 case Keys.Left:
                     if (dx == 0)
-                        dx = 8;
+                        dx = dy;
                     if (dx > 0)
                         dx = -dx;
                     dy = 0;
                     break;
                 case Keys.Right:
                     if (dx == 0)
-                        dx = 8;
+                        dx = dy;
                     if (dx < 0)
                         dx = -dx;
                     dy = 0;
