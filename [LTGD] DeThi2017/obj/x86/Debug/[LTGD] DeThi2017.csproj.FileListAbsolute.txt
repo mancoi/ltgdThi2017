@@ -5,3 +5,4 @@ D:\run\[LTGD] DeThi2017\[LTGD] DeThi2017\obj\x86\Debug\[LTGD] DeThi2017.csproj.G
 D:\run\[LTGD] DeThi2017\[LTGD] DeThi2017\obj\x86\Debug\[LTGD] DeThi2017.exe
 D:\run\[LTGD] DeThi2017\[LTGD] DeThi2017\obj\x86\Debug\[LTGD] DeThi2017.pdb
 D:\run\[LTGD] DeThi2017\[LTGD] DeThi2017\obj\x86\Debug\_LTGD__DeThi2017.Form1.resources
+D:\run\[LTGD] DeThi2017\[LTGD] DeThi2017\obj\x86\Debug\[LTGD] DeThi2017.csprojResolveAssemblyReference.cache

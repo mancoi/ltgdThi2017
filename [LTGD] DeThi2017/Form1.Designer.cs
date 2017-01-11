@@ -34,6 +34,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xXXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.picBall)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +69,10 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xXXToolStripMenuItem});
+            this.xXXToolStripMenuItem,
+            this.changeImageToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -74,8 +80,27 @@
             // xXXToolStripMenuItem
             // 
             this.xXXToolStripMenuItem.Name = "xXXToolStripMenuItem";
-            this.xXXToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.xXXToolStripMenuItem.Text = "XXX";
+            this.xXXToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.xXXToolStripMenuItem.Text = "Change Backgground Color";
+            this.xXXToolStripMenuItem.Click += new System.EventHandler(this.menuChangeBackColor);
+            // 
+            // changeImageToolStripMenuItem
+            // 
+            this.changeImageToolStripMenuItem.Name = "changeImageToolStripMenuItem";
+            this.changeImageToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.changeImageToolStripMenuItem.Text = "Change Image";
+            this.changeImageToolStripMenuItem.Click += new System.EventHandler(this.menuChangeImage);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(218, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // Form1
             // 
@@ -89,7 +114,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "MSSV - HoTen - SoMay";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
@@ -109,6 +134,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xXXToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeImageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

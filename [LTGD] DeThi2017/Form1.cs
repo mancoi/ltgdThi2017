@@ -28,8 +28,18 @@ namespace _LTGD__DeThi2017
             format.Alignment = StringAlignment.Center;
 
             Rectangle rec = new Rectangle(0, 40, ClientRectangle.Width, ClientRectangle.Height);
-
             e.Graphics.DrawString(nhanS, f, lnBr, rec, format);
+
+            string nhanMuiTen = "Nhấn các phím mũi tên để chuyển hướng";
+            Font f2 = new Font("Arial", 40, FontStyle.Regular);
+            HatchBrush hatchBr = new HatchBrush(HatchStyle.DarkHorizontal, Color.Green, Color.Blue);
+            StringFormat format2 = new StringFormat();
+            format2.LineAlignment = StringAlignment.Far;
+            format2.Alignment = StringAlignment.Center;
+
+            Rectangle rec2 = new Rectangle(0, -40, ClientRectangle.Width, ClientRectangle.Height);
+
+            e.Graphics.DrawString(nhanMuiTen, f2, hatchBr, rec2, format2);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -109,5 +119,25 @@ namespace _LTGD__DeThi2017
             picBall.Left += dx;
             picBall.Top += dy;
         }
+
+        private void menuChangeBackColor(object sender, EventArgs e)
+        {
+            ColorDialog clDialog = new ColorDialog();
+            clDialog.FullOpen = true;
+            if (clDialog.ShowDialog() == DialogResult.OK)
+                this.BackColor = clDialog.Color;
+        }
+
+        private void menuChangeImage(object sender, EventArgs e)
+        {
+            OpenFileDialog opfDialog = new OpenFileDialog();
+            opfDialog.Filter = "jpeg file (*.jpg)|*.jpg|"
+                                + "gif file (*.gif)|*.gif|"
+                                + "png file (*.png)|*.png|"
+                                + "bmp file (*.bmp)|*.bmp";
+            if (opfDialog.ShowDialog() == DialogResult.OK)
+                picBall.Image = Image.FromFile(opfDialog.FileName);
+        }
+
     }
 }
